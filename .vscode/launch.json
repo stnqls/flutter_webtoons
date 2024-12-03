@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Current Device",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "Android",
+      "request": "launch",
+      "type": "dart",
+      // 1. emulator -list-avds : 안드로이드 에뮬레이터 목록 확인
+      // 2. emulator -avd <AVD_NAME> : 안드로이드 에뮬레이터 실행
+      // 3. flutter devices : 플러터로 실행가능한 디바이스 목록 확인
+      // 4. 두 번째 열에 해당하는 값이 deviceId이므로 해당 값으로 변경
+      "deviceId": "emulator-5554"
+    },
+    {
+      "name": "Ios",
+      "request": "launch",
+      "type": "dart",
+      // 1. open -a Simulator : IOS 시뮬레이터 실행
+      // 2. flutter devices : 플러터로 실행가능한 디바이스 목록 확인
+      // 3. 두 번째 열에 해당하는 값이 deviceId이므로 해당 값으로 변경
+      "deviceId": "DD9FE479-3790-48AD-A96D-F15D18DB98AE"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "All Devices",
+      "configurations": ["Android", "Ios"]
+    }
+  ]
+}

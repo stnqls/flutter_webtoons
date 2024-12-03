@@ -1,0 +1,30 @@
+{
+  "path-intellisense.mappings": {
+    "assets": "${workspaceFolder}/assets"
+  }, //  프로젝트의 assets 디렉토리를 자동 완성 경로로 매핑합니다.
+  "path-intellisense.autoSlashAfterDirectory": false, // 디렉토리 이름 뒤에 자동으로 슬래시(/)를 추가하지 않습니다.
+  "path-intellisense.extensionOnImport": true, // 경로 자동 완성 시 파일 확장자를 포함합니다.
+
+  "[dart]": {
+    "editor.formatOnSave": true, // 파일 저장 시 자동 포맷팅
+    "editor.formatOnType": true, // 타입 시 자동 포맷팅
+    "editor.rulers": [100], // 100자에 대한 가이드 라인
+    "editor.selectionHighlight": false, // 선택 강조 표시 비활성화
+    "editor.suggest.snippetsPreventQuickSuggestions": false, // 스니펫이 빠른 제안을 방해하지 않도록 설정
+    "editor.suggestSelection": "first", // 첫 번째 제안 선택
+    "editor.tabCompletion": "onlySnippets", // 탭 완성 설정 (스니펫만)
+    "editor.wordBasedSuggestions": "off", // 단어 기반 제안 비활성화
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never", // 저장 시 코드 자동 수정 비활성화
+      "quickfix.insertSemicolon": "always", // 세미콜론 자동 삽입
+      "quickfix.add.trailingComma": "always" // 후행 쉼표 자동 삽입
+    }
+  },
+  "dart.lineLength": 100,
+  "dart.flutterHotReloadOnSave": "all", // 모든 파일 저장 시 핫 리로드
+  "dart.previewFlutterUiGuides": true, //  Flutter UI 가이드 미리보기 활성화
+  "explorer.fileNesting.patterns": {
+    "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+    "*.dart": "${capture}.g.dart,${capture}.freezed.dart"
+  } // 파일 네스팅 패턴 설정
+}
